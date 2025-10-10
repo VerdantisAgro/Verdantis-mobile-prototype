@@ -6,7 +6,7 @@ export default function LogoHeader() {
     <>
       <View style={styles.container}>
         <Image
-          source={require('../../assets/agro-logo-2.png')}
+          source={require('../../../assets/agro-logo-2.png')}
           style={styles.logo}
           resizeMode="contain"
         />

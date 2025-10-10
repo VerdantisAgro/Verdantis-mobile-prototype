@@ -7,7 +7,7 @@ export default function DashboardGestorScreen() {
   const { user } = useContext(AuthContext);
   const screenWidth = Dimensions.get("window").width - 40;
 
-  // 🔹 Dados simulados — Produção por fazenda
+  
   const fazendasData = [
     { nome: "Boa Esperança", producao: 350 },
     { nome: "Primavera", producao: 280 },
@@ -15,7 +15,7 @@ export default function DashboardGestorScreen() {
     { nome: "AgroVale", producao: 150 },
   ];
 
-  // 🔹 Dados de crescimento por mês
+ 
   const crescimentoData = [
     { mes: "Jan", producao: 1200 },
     { mes: "Fev", producao: 1450 },
@@ -25,7 +25,7 @@ export default function DashboardGestorScreen() {
     { mes: "Jun", producao: 2500 },
   ];
 
-  // 🔹 Estatísticas rápidas
+
   const total = fazendasData.reduce((acc, f) => acc + f.producao, 0);
   const media = Math.round(total / fazendasData.length);
   const melhor = fazendasData.reduce((a, b) => (a.producao > b.producao ? a : b));
@@ -37,7 +37,6 @@ export default function DashboardGestorScreen() {
         Olá, {user?.email || "Gestor"}! Aqui estão seus indicadores agrícolas.
       </Text>
 
-      {/* Estatísticas principais */}
       <View style={styles.statsContainer}>
         <View style={styles.statCard}>
           <Text style={styles.statLabel}>Produção Total</Text>
@@ -53,7 +52,7 @@ export default function DashboardGestorScreen() {
         </View>
       </View>
 
-      {/* Gráfico de produção por fazenda */}
+     
       <View style={styles.chartCard}>
         <Text style={styles.chartTitle}>🌾 Produção por Fazenda</Text>
         <BarChart
@@ -71,7 +70,7 @@ export default function DashboardGestorScreen() {
         />
       </View>
 
-      {/* Gráfico de crescimento mensal */}
+     
       <View style={styles.chartCard}>
         <Text style={styles.chartTitle}>📈 Crescimento Mensal</Text>
         <LineChart

@@ -47,9 +47,9 @@ export default function HomeScreen() {
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {[
-          { name: "Milho", img: require("../../assets/images/milho-img.png") },
-          { name: "Soja", img: require("../../assets/images/soja-img.png") },
-          { name: "Café", img: require("../../assets/images/cafe-img.png") },
+          { name: "Milho", img: require("../../../assets/milho-img.png") },
+          { name: "Soja", img: require("../../../assets/soja-img.png") },
+          { name: "Café", img: require("../../../assets/cafe-img.png") },
         ].map((crop, index) => (
           <View key={index} style={styles.cropCard}>
             <Image source={crop.img} style={styles.cropImg} resizeMode="cover" />

@@ -10,10 +10,10 @@ import {
 import InputField from "../components/generic/inputField";
 import PrimaryButton from "../components/generic/primaryButton";
 import LinkText from "../components/generic/linkText";
-import { AuthContext } from "../context/AuthContext"; // ✅ importa o contexto
+import { AuthContext } from "../context/AuthContext"; 
 
 export default function RegisterScreen({ navigation }) {
-  const { register } = useContext(AuthContext); // ✅ função global de cadastro
+  const { register } = useContext(AuthContext); 
 
   const [selectedRole, setSelectedRole] = useState(null);
   const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ export default function RegisterScreen({ navigation }) {
 
   return (
     <ImageBackground
-      source={require("../assets/agro-image-2.png")}
+      source={require("../../assets/agro-image-2.png")}
       style={styles.container}
     >
       <View style={styles.card}>
