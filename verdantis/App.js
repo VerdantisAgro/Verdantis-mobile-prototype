@@ -4,8 +4,8 @@ import { StatusBar, View, ActivityIndicator } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-import AppRoutes from "./routes/appRoutes";
-import AuthProvider, { AuthContext } from "./context/AuthContext";
+import AppRoutes from "./src/routes/appRoutes";
+import AuthProvider, { AuthContext } from "./src/context/AuthContext";
 Icon.loadFont();
 
 function AppContent() {
