@@ -30,7 +30,7 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <ImageBackground
-      source={require("../../assets/agro-image-1.png")}
+      source={require("../../assets/agro-image-2.png")}
       style={styles.container}
     >
       <View style={styles.overlay} />
