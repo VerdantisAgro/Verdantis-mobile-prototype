@@ -9,10 +9,10 @@ import {
   TextInput,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import LogoHeader from "../components/generic/logoHeader";
-import PrimaryButton from "../components/generic/primaryButton";
-import LinkText from "../components/generic/linkText";
-import { AuthContext } from "../context/AuthContext"; 
+import LogoHeader from "../../src/components/generic/logoHeader";
+import PrimaryButton from "../../src/components/generic/primaryButton";
+import LinkText from "../../src/components/generic/linkText";
+import { AuthContext } from "../../src/context/AuthContext"; 
 
 export default function LoginScreen({ navigation }) {
   const { login } = useContext(AuthContext); 

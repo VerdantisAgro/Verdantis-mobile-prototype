@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image, ActivityIndicator, Alert } from "react-native";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../../src/context/AuthContext";
 
 export default function ProfileScreen({ navigation }) {
   const { user, logout } = useContext(AuthContext);

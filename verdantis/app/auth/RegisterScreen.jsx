@@ -7,10 +7,10 @@ import {
   ImageBackground, 
   Alert 
 } from "react-native";
-import InputField from "../components/generic/inputField";
-import PrimaryButton from "../components/generic/primaryButton";
-import LinkText from "../components/generic/linkText";
-import { AuthContext } from "../context/AuthContext"; 
+import InputField from "../../src/components/generic/inputField";
+import PrimaryButton from "../../src/components/generic/primaryButton";
+import LinkText from "../../src/components/generic/linkText";
+import { AuthContext } from "../../src/context/AuthContext"; 
 
 export default function RegisterScreen({ navigation }) {
   const { register } = useContext(AuthContext); 
